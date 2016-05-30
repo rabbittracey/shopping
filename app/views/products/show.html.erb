@@ -1,0 +1,33 @@
+<% if notice %>
+
+    <div class="alert alert-info">
+      <p id="notice"><%= notice %></p>
+    </div>
+<% end %>
+<div class="page-header">
+  <ul class="list-inline pull-right">
+    <li><%= link_to 'Edit', edit_product_path(@product), :class=>"btn btn-danger" %></li>
+    <li><%= link_to 'Back', products_path, :class=>"btn btn-warning" %></li>
+  </ul>
+
+  <h3><%= @product.name %> </h3>
+</div>
+<table class="table table-bordered">
+  <tr>
+    <td>Name</td>
+    <td><%=@product.name%></td>
+  </tr>
+  <tr>
+    <td>Image</td>
+    <td><img class=""img-responsive" src=<%=asset_path @product.image%>/></td>
+  </tr>
+  <tr>
+    <td>Description</td>
+    <td><%=@product.description%></td>
+  </tr>
+  <tr class="success">
+    <td>Price</td>
+    <td><%=@product.price%></td>
+  </tr>
+</table>
+

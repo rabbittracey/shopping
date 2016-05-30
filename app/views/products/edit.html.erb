@@ -1,0 +1,91 @@
+<h1>Editing Product</h1>
+
+<div class="container">
+  <table class="table table-responsive  table-striped table-hover table-condensed">
+    <tr class="danger">
+      <th>Item Name</th>
+      <th>Price($)</th>
+    </tr>
+    <tr class="warning">
+      <th>Item 1</th>
+      <th>$100</th>
+    </tr>
+    <tr class="success">
+      <th>Item 2</th>
+      <th>$110</th>
+    </tr>
+  </table>
+</div>
+
+<div class="container">
+  <form >
+    <div class="form-group">
+      <label for="text">Text</label>
+      <input type="text" class="form-control" id="text" placeholder="Enter text">
+    </div>
+    <div class="form-group">
+      <label for="textarea">Textarea</label>
+      <input type="textarea" class="form-control" id="textarea" placeholder="Enter text">
+    </div>
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input type="datetime" class="form-control" id="date" placeholder="date">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+
+
+    <div class="checkbox">
+      <label>
+        <input type="checkbox">
+        Remember me
+      </label>
+
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio">Male
+      </label>
+      <label>
+        <input type="radio">Female
+      </label>
+    </div>
+    <button type="submit" class="btn btn-success">Sign in</button>
+    </form>
+  <form class="form-inline">
+    <div class="form-group has-success">
+      <label for="name">Name</label>
+      <input type="email" class="form-control" id="name" placeholder="Name">
+    </div>
+    <div class="form-group has-error">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Email">
+    </div>
+    <div class="form-group has-warning">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox">
+        Remember me
+      </label>
+      </div>
+      <button type="submit" class="btn btn-success">Sign in</button>
+    </div>
+    <select class=" form-group form-control">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+  </form>
+
+</div>
+
+
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @product %> |
+<%= link_to 'Back', products_path %>
